@@ -7,9 +7,12 @@ class Printer
     @name = name
     info "starting"
     subscribe('printing', :print)
+
   end
 
   def print(channel, message)
-    info "#{@name} is printing #{message}"
+    m = "#{@name} is printing #{message}"
+    MESSAGES << m
+    info m
   end
 end

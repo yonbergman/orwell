@@ -1,10 +1,9 @@
 module Resources
-  class Home < Lattice::Resource
+  class Users < Lattice::Resource
   	include Webmachine::ActionView::Resource
 
     def to_html
-	  @messages = MESSAGES.dup
-	  MESSAGES.clear
+	  @users = User.all
       render
     end
   end

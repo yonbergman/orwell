@@ -1,4 +1,9 @@
 <p>
 Click to send print command
+<ul>
+	<% @messages.each do |m| %>
+	<li><%= m %></li>
+	<% end %>
+</ul>	
 <a class='btn btn-small btn-default' href='/ping'>Print</a>
 </p>

@@ -1,4 +1,4 @@
-class User
+class Pinger
   include Celluloid
   include Celluloid::Notifications
 

@@ -3,8 +3,9 @@ module Resources
   	include Celluloid::Notifications
     def to_html
 	  publish 'printing', "Ping" 
-      response.redirect_to '/'
-      3
+      # response.redirect_to '/'
+      # 3
+      "Hey"
     end
   end
 end

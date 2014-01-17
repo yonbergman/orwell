@@ -1,0 +1,14 @@
+<div class='container'>
+	<h1> Users </h1>
+	<table class='table table-striped'>
+	<% @users.each do |user| %>
+		<tr>
+			<td><%= user.key %></td>
+			<td><%= user.full_name %></td>
+			<td><%= user.bluetooth_addr %></td>
+			<td><%= user.song.artist %></td>
+			<td><%= user.song.name %></td>
+		</tr>	
+	<% end %>
+	</table>	
+</div>
