@@ -17,4 +17,9 @@ namespace :db do
 		require File.expand_path('../config/seed', __FILE__)
 	end	
 	
+	task :server do 
+		require "lattice/server"
+		Lattice::Server.new("0.0.0.0", 3000, root: Lattice.root).run
+	end
+	
 end
