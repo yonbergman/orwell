@@ -7,3 +7,12 @@ Click to send print command
 </ul>	
 <a class='btn btn-small btn-default' href='/ping'>Print</a>
 </p>
+
+<img id='cam' src='/cam' width="300" />
+<script>
+setInterval(function() {
+    var myImageElement = document.getElementById('cam');
+    myImageElement.src = '/cam?rand=' + Math.random();
+}, 1100);
+
+</script>

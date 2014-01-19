@@ -11,3 +11,4 @@ gem 'sqlite3'
 gem 'sequel'
 
 gem 'httparty'
+gem 'ruby-opencv'
