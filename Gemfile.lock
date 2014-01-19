@@ -64,6 +64,7 @@ GEM
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
+    rake (10.1.0)
     reel (0.4.0)
       celluloid (>= 0.15.1)
       celluloid-io (>= 0.15.0)
@@ -102,6 +103,7 @@ DEPENDENCIES
   foreman
   httparty
   lattice!
+  rake
   sequel
   sqlite3
   webmachine!

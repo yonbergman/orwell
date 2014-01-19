@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'rake'
 gem 'lattice',    github: 'celluloid/lattice'
 gem 'webmachine', github: 'seancribbs/webmachine-ruby'
 gem 'webmachine-test'
