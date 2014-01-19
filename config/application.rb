@@ -7,6 +7,11 @@ require 'resources/ping'
 require 'resources/users'
 
 module Orwell
+	Webmachine.application.configure do |config|
+  		config.ip = '0.0.0.0'
+  #config.port = 3000
+  #config.adapter = :Mongrel
+	end
   Application = Lattice::Application.new do |app|
     app.routes do
 	  add ['users', '*'], Resources::Users
