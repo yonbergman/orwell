@@ -7,7 +7,7 @@ require 'resources/ping'
 require 'resources/users'
 
 module Orwell
-  Application = Lattice::Application.new('0.0.0.0') do |app|
+  Application = Lattice::Application.new do |app|
     app.routes do
 	  add ['users', '*'], Resources::Users
       add ['ping'], Resources::Ping
