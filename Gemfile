@@ -8,3 +8,5 @@ gem 'webmachine-sprockets'
 gem 'foreman'
 gem 'sqlite3'
 gem 'sequel'
+
+gem 'httparty'
