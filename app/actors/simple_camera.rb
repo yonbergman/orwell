@@ -1,4 +1,4 @@
-class FaceDetection
+class SimpleCamera
   include Celluloid
   include Celluloid::Notifications
   include Celluloid::Logger
