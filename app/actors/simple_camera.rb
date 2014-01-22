@@ -1,21 +1,15 @@
-class SimpleCamera
+class FaceDetection
   include Celluloid
   include Celluloid::Notifications
   include Celluloid::Logger
 
   def initialize
-    async.run
+      async.run
   end
 
   def run
-    every(1) do
-      begin
-        `raspistill -t 1 -vs -o tmpframe.png`
-      rescue Exception
-        error 'could not capture image'
-      end
-		end
+    while true
+      `raspistill -w 640 -h 480 -q 5 -o tmpframe.png -tl 100 -t 9999999 -th 0:0:0 -n`
+    end
   end
-
 end
-

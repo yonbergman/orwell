@@ -11,7 +11,7 @@ class FaceDetection
 
   def run
   	begin
-		every(1) do
+		every(0.5) do
 			require "opencv" unless defined? ::OpenCV
 			@capture = ::OpenCV::CvCapture::open unless @capture
 			frame = @capture.query 
