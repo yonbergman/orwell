@@ -1,6 +1,8 @@
 require 'httparty'
 
-class Door
+class DoorOpener
+  QUEUE = 'open_door'
+
   include Celluloid
   include Celluloid::Notifications
   include Celluloid::Logger
@@ -8,7 +10,7 @@ class Door
   def initialize(addr)
   	@url = "http://#{addr}/door"
   	info "DOOR listening on #{@url}"
-    subscribe('door', :open_door)
+    subscribe(QUEUE, :open_door)
   end
 
   def open_door(request)

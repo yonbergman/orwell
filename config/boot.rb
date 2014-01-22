@@ -15,3 +15,7 @@ Webmachine::ActionView.configure do |config|
 end
 
 require_relative './db'
+
+Dir['app/actors/*.rb'].each {|file| require file }
+Dir['app/models/*.rb'].each {|file| require file }
+Dir['app/resources/*.rb'].each {|file| require file }

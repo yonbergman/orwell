@@ -1,17 +1,12 @@
 require File.expand_path("../boot", __FILE__)
 require File.expand_path("../actors", __FILE__)
 
-# Require your resources here
-require 'resources/home'
-require 'resources/ping'
-require 'resources/users'
-require 'resources/cam'
-
 module Orwell
   Application = Lattice::Application.new do |app|
     app.routes do
-	  add ['users', '*'], Resources::Users
-      add ['ping'], Resources::Ping
+	    add ['users', '*'], Resources::Users
+      add ['door'], Resources::Door
+      add ['ding'], Resources::Ding
       add ['cam'], Resources::Cam
       add ['*'], Resources::Home
     end

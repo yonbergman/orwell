@@ -29,3 +29,18 @@ $ brew update # just to make sure your brew is up to date
 $ brew tap homebrew/science
 $ brew install opencv
 ```
+
+## Installing MPG123
+
+### OSX
+
+```
+$ brew install mpg123
+```
+
+### Unix
+
+```
+$ sudo apt-get install mpg123
+```
+

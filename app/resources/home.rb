@@ -3,8 +3,6 @@ module Resources
   	include Webmachine::ActionView::Resource
 
     def to_html
-	  @messages = MESSAGES.dup
-	  MESSAGES.clear
       render
     end
   end
