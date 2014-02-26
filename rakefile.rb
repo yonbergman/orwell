@@ -19,7 +19,6 @@ namespace :db do
 	
 	task :server do 
 		require "lattice/server"
-		Lattice::Server.new("0.0.0.0", 3000, root: Lattice.root).run
+		Lattice::Server.new("0.0.0.0", 9292, root: Lattice.root).run
 	end
-	
 end
