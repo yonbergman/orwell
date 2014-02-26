@@ -12,3 +12,4 @@ gem 'sequel'
 
 gem 'httparty'
 gem 'ruby-opencv'
+gem 'foreman-export-initscript'
